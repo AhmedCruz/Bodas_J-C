@@ -488,3 +488,47 @@ form button:hover {
   .wedding-date { font-size: clamp(0.8rem, 4vw, 1rem); margin-bottom: 1.5rem; }
   .particles { display: none; }
 }
+
+
+/* --- NUEVOS ESTILOS PARA LOS BOTONES DEL HERO (SIN CÍRCULO) --- */
+
+/* Contenedor para alinear los botones (este se mantiene igual) */
+.hero-actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espacio entre los botones */
+  flex-wrap: wrap; 
+}
+
+/* Estilo MODIFICADO para el botón de música */
+#music-control {
+  /* Reseteamos la posición */
+  position: static;
+  
+  /* Eliminamos el fondo, borde y tamaño fijo */
+  background-color: transparent;
+  border: none;
+  width: auto;
+  height: auto;
+  border-radius: 0; /* Quitamos el círculo */
+  
+  /* Aumentamos el tamaño del ícono y le damos sombra */
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 2.5rem; /* Hacemos el ícono más grande */
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* Sombra para que resalte */
+
+  /* Mantenemos la funcionalidad y transición */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  /* Ajustamos el padding */
+  padding: 5px;
+}
+
+#music-control:hover {
+  /* Hacemos que el ícono crezca y brille un poco al pasar el mouse */
+  transform: scale(1.2);
+  color: white; 
+}
