@@ -532,3 +532,10 @@ form button:hover {
   transform: scale(1.2);
   color: white; 
 }
+
+.hero-subtitle {
+  color: white;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  margin-top: 1.5rem; /* Espacio arriba */
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
