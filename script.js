@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const nombre = form.nombre.value.trim();
             const acompanantes = form.acompanantes.value.trim() || 0;
             const mensaje = `¡Hola! Confirmo mi asistencia a la boda de Jesús y Diana.\n\nNombre: ${nombre}\nInvitados: ${acompanantes}`;
-            const whatsappURL = `https://wa.me/+5215576117511?text=${encodeURIComponent(mensaje)}`;
+            const whatsappURL = `https://wa.me/+5215632791109?text=${encodeURIComponent(mensaje)}`;
             window.open(whatsappURL, "_blank");
             alert("Gracias por confirmar. Serás redirigido a WhatsApp para enviar el mensaje.");
             form.reset();
